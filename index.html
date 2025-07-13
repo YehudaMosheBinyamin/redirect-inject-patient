@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="refresh" content="0; url=https://6xc8wy8oje.execute-api.eu-north-1.amazonaws.com/injectRandomPatient" />
-    <title>Redirecting...</title>
+  <title>Redirecting with POST...</title>
 </head>
-<body>
-    <p>If you are not redirected automatically, <a href="https://6xc8wy8oje.execute-api.eu-north-1.amazonaws.com/injectRandomPatient">click here</a>.</p>
+<body onload="document.forms[0].submit()">
+  <form action="https://6xc8wy8oje.execute-api.eu-north-1.amazonaws.com/injectRandomPatient" method="POST">
+    <!-- Optional: hidden inputs if your POST needs data -->
+  </form>
+  <p>If you are not redirected automatically, <button onclick="document.forms[0].submit()">Click here</button></p>
 </body>
 </html>
