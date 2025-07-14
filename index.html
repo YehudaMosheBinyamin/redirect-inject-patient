@@ -1,10 +1,9 @@
 <script>
-async function go() {
+(async () => {
   const res = await fetch(
-    'https://6xc8wy8oje.execute-api.eu-north-1.amazonaws.com/injectRandomPatient',
+    'https://abc123.execute-api.us-east-1.amazonaws.com/prod/hello',
     {method: 'POST', body: JSON.stringify({foo: 1})}
   );
   document.body.innerText = await res.text();
-}
+})();
 </script>
-<button onclick="go()">Call API</button>
