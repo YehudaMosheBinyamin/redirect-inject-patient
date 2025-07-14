@@ -1,7 +1,7 @@
 <script>
 async function go() {
   const res = await fetch(
-    'https://abc123.execute-api.us-east-1.amazonaws.com/prod/hello',
+    'https://6xc8wy8oje.execute-api.eu-north-1.amazonaws.com/injectRandomPatient',
     {method: 'POST', body: JSON.stringify({foo: 1})}
   );
   document.body.innerText = await res.text();
